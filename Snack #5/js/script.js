@@ -14,6 +14,7 @@ for (i = 0 ; i <= 5 ; i++) {
 
     var userNumbers = parseInt(prompt("Inserisci un numero"));
     console.log(userNumbers);
+    document.getElementById("numbers").innerHTML += "<li>" + userNumbers + "</li>";
 
     if (isOdd(userNumbers) == "dispari") {
         array.push(userNumbers);
@@ -22,6 +23,7 @@ for (i = 0 ; i <= 5 ; i++) {
 }
 
 console.log(array);
+document.getElementById("odd_numbers").innerHTML += "I numeri dispari sono: " + array;
 
 // Functions
 function isOdd(number) {
